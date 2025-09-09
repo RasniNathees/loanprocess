@@ -1,6 +1,6 @@
 import { useState } from "react";
 import NavButton from "./navbutton";
-
+import { FaGauge,FaUsers,FaGear} from "react-icons/fa6"; 
 
 
 const Navbar = () => {
@@ -18,15 +18,21 @@ const Navbar = () => {
 
             <NavButton to="/" className={active === 'dashboard' ? 'active' : 'de-active'} 
             onClick={()=>setActive('dashboard')}>
-                Home Page
+               <div className="flex">
+                <FaGauge className="mt-1 mr-3"/> Dashboard
+               </div>
             </NavButton>
             <NavButton to="/" className={active === 'borrowers' ? 'active' : 'de-active'} 
             onClick={()=>setActive('borrowers')}>
-            Borrowers
+           <div className="flex">
+                <FaUsers className="mt-1 mr-3"/> Borrowers
+               </div>
             </NavButton>
             <NavButton to="/" className={active === 'settings' ? 'active' : 'de-active'} 
             onClick={()=>setActive('settings')}>
-            Settings
+           <div className="flex">
+                <FaGear className="mt-1 mr-3"/> Settings
+               </div>
             </NavButton>
 
         </section>
