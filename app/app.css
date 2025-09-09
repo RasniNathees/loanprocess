@@ -3,7 +3,11 @@
 :root {
   --primary: #2c3e50;
   --border-logo: rgba(255, 255, 255, 0.1);
-   --light: #ecf0f1;
+  --light: #ecf0f1;
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --backround:#F5F7FA;
+  --border-header:#DFE6E9;
+
 }
 
 
@@ -22,17 +26,17 @@ html,
 } */
 
 .admin-layout {
-  @apply  flex flex-col lg:flex-row min-h-screen bg-white ;
+  @apply flex flex-col lg:flex-row min-h-screen bg-[var(--backround)];
+
   .children {
-    @apply w-full h-full bg-white pt-12 lg:pt-10;
+    @apply w-full h-full bg-[var(--backround)] pt-12 lg:pt-10;
   }
 }
 
-.active{
-   @apply border-blue-400 border-l-4   bg-[var(--border-logo)]
-   
+.active {
+  @apply border-blue-400 border-l-4 bg-[var(--border-logo)]
 }
-.de-active{
-    @apply hover:bg-[var(--border-logo)] transition-all duration-200 hover:border-l-4 
-                hover:border-blue-400
+
+.de-active {
+  @apply hover:bg-[var(--border-logo)] transition-all duration-200 hover:border-l-4 hover:border-blue-400
 }

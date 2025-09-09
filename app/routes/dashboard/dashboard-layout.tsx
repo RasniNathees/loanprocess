@@ -12,7 +12,7 @@ const DashboardLayout = () => {
             <div className="flex flex-col  bg-[var(---light)]  lg:w-[calc(100vw-250px)]  ">
                 <div className="mx-4">
                     <div className=" flex flex-row justify-between items-center text-black  
-                    px-8 py-4  border-b-2 border-gray-100  w-full">
+                    px-8 py-4  border-b-2 border-[var(--border-header)]  w-full">
                         <h2 className="text-xl font-bold">Borrower Pipeline</h2>
                         <div className="flex flex-row items-center">
                             <img
