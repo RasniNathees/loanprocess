@@ -14,6 +14,9 @@ importers:
       '@react-router/serve':
         specifier: ^7.7.1
         version: 7.8.2(react-router@7.8.2(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(typescript@5.9.2)
+      '@syncfusion/ej2-react-navigations':
+        specifier: ^31.1.17
+        version: 31.1.17
       isbot:
         specifier: ^5.1.27
         version: 5.1.30
@@ -538,6 +541,40 @@ packages:
     resolution: {integrity: sha512-StxAO/8ts62KZVRAm4JZYq9+NqNsV7RvimNK+YM7ry//zebEH6meuugqW/P5OFUCjyQgui+9fUxT6d5NShvMvA==}
     cpu: [x64]
     os: [win32]
+
+  '@syncfusion/ej2-base@31.1.17':
+    resolution: {integrity: sha512-Jl2Ls77kMfX13VwrAEow/kdDrefX3gh76Uwh943NUtEuChOXzvoe+CHecxJ+49VFRCrLYhB4Hj/7R9UOh65VCg==}
+    hasBin: true
+
+  '@syncfusion/ej2-buttons@31.1.17':
+    resolution: {integrity: sha512-unX92EnCLtRbczrCRsqGC1/tPgkHYlnQQFCv+c11wptp7KzZF+V5se7Rc+yEFs8d0OLyrT1qk0MAYJUOKezYZw==}
+
+  '@syncfusion/ej2-data@31.1.17':
+    resolution: {integrity: sha512-jytTgUnRqGoXfzOcvRJ0p+KAPFOD53He3+y3AX8zrej/oPcMtt5iHNc44AvJ7XhpYUHLVvcSFYTd0395q/VPLA==}
+
+  '@syncfusion/ej2-icons@31.1.17':
+    resolution: {integrity: sha512-5IkOJyoUL7MoOjRE+hf2jC/dCjS+Q1Z34oz49mSvK1vKc2kcYR5Wa7o49uwjAgmJUSZK8O2cGE0M3HHSBFIKSw==}
+
+  '@syncfusion/ej2-inputs@31.1.17':
+    resolution: {integrity: sha512-qlCnlu7eA5ECLEH5egHAjnhpLRBu/PsxFYNJntpsQHFFfQi2hPtlbZrLZVidy2FBgG+Q1EATOpgTy3mMiQ94Jw==}
+
+  '@syncfusion/ej2-lists@31.1.17':
+    resolution: {integrity: sha512-EyU/yUflRQ2hsGvOiguCdqdAeyUmojwllVgnx89MZyJ4zuCSU+OhbETJZ7BB2+8uhleq1cJ3wTY2PtHpBrPErw==}
+
+  '@syncfusion/ej2-navigations@31.1.17':
+    resolution: {integrity: sha512-yxQRJ8Gq2w1u8aoTd21CYNkfjxTdCvnCdGuDwO88BsK9YKbrZ+b+HJzB5X0IVSPMC4mh9kO4RN8cQOFiBhAJyA==}
+
+  '@syncfusion/ej2-popups@31.1.17':
+    resolution: {integrity: sha512-JnFn2aoKSC7CY8z4iTm+00gFXs9Helzkk860q52ykZxrI7/H2euVNabHZ7BOYYgYBQbOnWjfIvESQdtT2IVKgA==}
+
+  '@syncfusion/ej2-react-base@31.1.17':
+    resolution: {integrity: sha512-PvR2kvfMEjRE2kOcBSboMMEVkLNsDs9VV5tSfXzYR4aQ5gOvbQcVRQljxjj6lTTG7z3P5OAP6HxYJ0BMLe+E4g==}
+
+  '@syncfusion/ej2-react-navigations@31.1.17':
+    resolution: {integrity: sha512-OJKd1GZNXC9VnQtgYN+cp3ztPIHocVGFRS1Mz4hLn8tIZXPtPyH+LUWw5vEmv8Dmb7H9TUAfMZZr8o8wJBwMaw==}
+
+  '@syncfusion/ej2-splitbuttons@31.1.17':
+    resolution: {integrity: sha512-8XA9t2wVtSonGnpblqS3FgEoS8sYy6GOh3p99gDKyPI55UYwUcvuHsBaTA/+w4tGwZ5wiNQMKXWaanHXIGvovw==}
 
   '@tailwindcss/node@4.1.13':
     resolution: {integrity: sha512-eq3ouolC1oEFOAvOMOBAmfCIqZBJuvWvvYWh5h5iOYfe1HFC6+GZ6EIL0JdM3/niGRJmnrOc+8gl9/HGUaaptw==}
@@ -2069,6 +2106,63 @@ snapshots:
 
   '@rollup/rollup-win32-x64-msvc@4.50.1':
     optional: true
+
+  '@syncfusion/ej2-base@31.1.17':
+    dependencies:
+      '@syncfusion/ej2-icons': 31.1.17
+
+  '@syncfusion/ej2-buttons@31.1.17':
+    dependencies:
+      '@syncfusion/ej2-base': 31.1.17
+
+  '@syncfusion/ej2-data@31.1.17':
+    dependencies:
+      '@syncfusion/ej2-base': 31.1.17
+
+  '@syncfusion/ej2-icons@31.1.17': {}
+
+  '@syncfusion/ej2-inputs@31.1.17':
+    dependencies:
+      '@syncfusion/ej2-base': 31.1.17
+      '@syncfusion/ej2-buttons': 31.1.17
+      '@syncfusion/ej2-popups': 31.1.17
+      '@syncfusion/ej2-splitbuttons': 31.1.17
+
+  '@syncfusion/ej2-lists@31.1.17':
+    dependencies:
+      '@syncfusion/ej2-base': 31.1.17
+      '@syncfusion/ej2-buttons': 31.1.17
+      '@syncfusion/ej2-data': 31.1.17
+      '@syncfusion/ej2-popups': 31.1.17
+
+  '@syncfusion/ej2-navigations@31.1.17':
+    dependencies:
+      '@syncfusion/ej2-base': 31.1.17
+      '@syncfusion/ej2-buttons': 31.1.17
+      '@syncfusion/ej2-data': 31.1.17
+      '@syncfusion/ej2-inputs': 31.1.17
+      '@syncfusion/ej2-lists': 31.1.17
+      '@syncfusion/ej2-popups': 31.1.17
+
+  '@syncfusion/ej2-popups@31.1.17':
+    dependencies:
+      '@syncfusion/ej2-base': 31.1.17
+      '@syncfusion/ej2-buttons': 31.1.17
+
+  '@syncfusion/ej2-react-base@31.1.17':
+    dependencies:
+      '@syncfusion/ej2-base': 31.1.17
+
+  '@syncfusion/ej2-react-navigations@31.1.17':
+    dependencies:
+      '@syncfusion/ej2-base': 31.1.17
+      '@syncfusion/ej2-navigations': 31.1.17
+      '@syncfusion/ej2-react-base': 31.1.17
+
+  '@syncfusion/ej2-splitbuttons@31.1.17':
+    dependencies:
+      '@syncfusion/ej2-base': 31.1.17
+      '@syncfusion/ej2-popups': 31.1.17
 
   '@tailwindcss/node@4.1.13':
     dependencies:

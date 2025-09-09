@@ -1,11 +1,14 @@
 import React from "react";
 import { Outlet } from "react-router";
+import { Navbar } from "../../components/index";
 
 const DashboardLayout = () => {
     return (
         <div className="admin-layout">
-            <aside>mobile sidebar</aside>
-            <aside className="w-full max-w[250px] hidden lg:block">side bar</aside>
+            <aside className="lg:hidden">mobile sidebar</aside>
+            <aside className="w-[450px]  hidden lg:block ">
+            <Navbar/>
+            </aside>
             <aside className="children">
                 <Outlet />
             </aside>

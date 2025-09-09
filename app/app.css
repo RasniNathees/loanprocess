@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+:root {
+  --primary: #2c3e50;
+  --border-logo: rgba(255, 255, 255, 0.1);
+}
+
+
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -19,4 +25,13 @@ html,
   .children {
     @apply w-full h-full bg-white pt-12 lg:pt-10;
   }
+}
+
+.active{
+   @apply border-blue-400 border-l-4   bg-[var(--border-logo)]
+   
+}
+.de-active{
+    @apply hover:bg-[var(--border-logo)] transition-all duration-200 hover:border-l-4 
+                hover:border-blue-400
 }
