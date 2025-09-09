@@ -1,6 +1,9 @@
-import { type RouteConfig, route } from "@react-router/dev/routes";
+import { type RouteConfig, layout, route } from "@react-router/dev/routes";
 import path from "path";
 
 export default [
-    route('/', 'routes/dashboard/dashboard.tsx'),
+    layout('routes/dashboard/dashboard-layout.tsx', [
+          route('/', 'routes/dashboard/dashboard.tsx'),
+    ]),
+  
 ] satisfies RouteConfig;

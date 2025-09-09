@@ -6,10 +6,17 @@
 }
 
 html,
-body {
+/* body {
   @apply bg-white dark:bg-gray-950;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
+  }
+} */
+
+.admin-layout {
+  @apply  flex flex-col lg:flex-row min-h-screen bg-white ;
+  .children {
+    @apply w-full h-full bg-white pt-12 lg:pt-10;
   }
 }
